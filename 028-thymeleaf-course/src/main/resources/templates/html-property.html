@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>属性</title>
+    <script th:src="@{/js/jquery-3.4.1.js}" type="text/javascript"></script>
+    <!--    http://localhost:8080/js/jquery-3.4.1.js 这个地址才能正常访问,直接在static目录下找-->
+</head>
+<body>
+<div style="text-align: center">
+    <h3>属性使用，在html元素的属性上加入th</h3>
+    <form th:action="@{loginServlet}" th:method="${methodAttr}">
+        <input th:type="text" th:name="${paramname}" th:value="${username}"><br/>
+        <input type="button" id="btn" th:onclick="btnClick()" value="按钮"><br/>
+        <input type="submit" value="提交姓名">
+    </form>
+    <br/>
+    <p th:style="${textcolor}">这是模板的例子</p>
+</div>
+</body>
+<script type="text/javascript">
+    function btnClick() {
+        alert("按钮单击了！")
+    }
+
+    $(function () {
+        $("#btn").click(function () {
+            alert("click===jquery")
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/001-springboot-pre/pom.xml" />
+        <option value="$PROJECT_DIR$/002-springboot-first/pom.xml" />
+        <option value="$PROJECT_DIR$/003-springboot-second/pom.xml" />
+        <option value="$PROJECT_DIR$/006-springboot-environment/pom.xml" />
+        <option value="$PROJECT_DIR$/005-springboot-mvc/pom.xml" />
+        <option value="$PROJECT_DIR$/007-springboot-multi-environment/pom.xml" />
+        <option value="$PROJECT_DIR$/008-springboot-custom-yml/pom.xml" />
+        <option value="$PROJECT_DIR$/009-springboot-jsp/pom.xml" />
+        <option value="$PROJECT_DIR$/010-springboot-container/pom.xml" />
+        <option value="$PROJECT_DIR$/011-springboot-commandlinerunner/pom.xml" />
+        <option value="$PROJECT_DIR$/012-springboot-interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/013-springboot-servlet/pom.xml" />
+        <option value="$PROJECT_DIR$/014-springboot-filter/pom.xml" />
+        <option value="$PROJECT_DIR$/015-springboot-characterencodingfilter/pom.xml" />
+        <option value="$PROJECT_DIR$/016-springboot-character-properties/pom.xml" />
+        <option value="$PROJECT_DIR$/017-springboot-mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/018-springboot-mapperscan/pom.xml" />
+        <option value="$PROJECT_DIR$/018-springboot-mapperscan/pom.xml.bak" />
+        <option value="$PROJECT_DIR$/019-springboot-transactional/pom.xml" />
+        <option value="$PROJECT_DIR$/020-springboot-rest/pom.xml" />
+        <option value="$PROJECT_DIR$/027-thymeleaf-first/pom.xml" />
+        <option value="$PROJECT_DIR$/028-thymeleaf-course/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

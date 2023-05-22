@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <td>编号</td>
+        <td>id</td>
+        <td>name</td>
+        <td>sex</td>
+        <td>age</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="userArray,userIter:${myUserArray}">
+        <td th:text="${userIter.count}+'/'+${userIter.size}"></td>
+        <td th:text="${userArray.id}">id</td>
+        <td th:text="${userArray.name}">name</td>
+        <td th:text="${userArray.sex}">sex</td>
+        <td th:text="${userArray.age}">age</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

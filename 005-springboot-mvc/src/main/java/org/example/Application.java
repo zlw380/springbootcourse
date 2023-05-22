@@ -1,0 +1,38 @@
+package org.example;
+
+import org.example.vo.Student;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+@SpringBootApplication
+public class Application {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+
+    //声明对象，对象注入到容器，与spring中的xml配置文件作用相同
+    @Bean
+    public Student myStudent() {
+        return new Student();
+    }
+
+}
+
+/*	@SpringBootApplication注解是一个复合注解，其中包含了：
+	1.@SpringBootConfiguration注解：
+		@SpringBootConfiguration中又包含了@Configuration注解，因此
+		被@SpringBootApplication修饰的类同样具有被@Configuration修饰的JavaConfig配置类的功能
+		能够在类中声明对象并注入到spring容器中，相当于spring IOC 中的xml配置文件
+	2.@EnableAutoConfiguration注解：
+		启用自动配置，把java对象配置好，注入到spring容器中。例如可以把mybatis的对象
+		（dataSource、sqlSessionFactory、Dao）创建好，放入到容器中
+	3.@ComponentScan注解：
+		声明组件扫描器，@ComponentScan扫描器，找到注解，根据注解的功能创建对象，给属性赋值等等。
+		默认扫描的包：被@ComponentScan修饰的Application类当前所在包的同一目录下的包及其子包。
+		如controller包下的控制器类，service包下的业务逻辑类均可以被扫描到并自动创建对象注入到spring容器当中
+		相当于spring IOC中的注解开发
+
+	同时，springboot框架会自动注册以前在SSM框架开发时需要在web.xml文件中手动注册的中央调度器servlet对象
+	*/

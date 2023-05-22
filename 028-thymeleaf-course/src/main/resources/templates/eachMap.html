@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <td>编号</td>
+        <td>Key</td>
+        <td>Value</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="map,userIter:${myUserMap}">
+        <td th:text="${userIter.count}+'/'+${userIter.size}"></td>
+        <td th:text="${map.key}"></td>
+        <td th:text="${map.value}"></td>
+    </tr>
+    </tbody>
+</table>
+<br/>
+<!--    循环嵌套
+        此时listmap表示list集合里的map成员
+        循环List内所有Map成员
+        注意：冒号是必须带的-->
+<div th:each="listmap,listMapIter:${listMap}">
+    <!--       循环Map内所有Key和Value-->
+    <div th:each="m:${listmap}">
+        <hr/>
+        <p th:text="${m.key}"></p>
+        <p th:text="${m.value.id}"></p>
+        <p th:text="${m.value.name}"></p>
+        <p th:text="${m.value.sex}"></p>
+        <p th:text="${m.value.age}"></p>
+    </div>
+</div>
+
+</table>
+</body>
+</html>

@@ -1,0 +1,5 @@
+#properties和yml文件同时存在优先用的还是properties
+server:
+  port: 8083
+  servlet:
+    context-path: /myboot2

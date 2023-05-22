@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>循环集合</title>
+</head>
+<body>
+<div style="text-align: center">
+    <!--<div th:each="user,userIter:${myusers}">
+        <p th:text="${user.id}"></p>
+        <p th:text="${user.name}"></p>
+        <p th:text="${user.sex}"></p>
+        <p th:text="${user.age}"></p>
+        <p th:text="${user}"></p>
+    </div>-->
+    <table border="1">
+        <thead>
+        <tr>
+            <td>编号</td>
+            <td>id</td>
+            <td>name</td>
+            <td>sex</td>
+            <td>age</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user,userIter:${myusers}">
+            <td th:text="${userIter.count}+'/'+${userIter.size}"></td>
+            <td th:text="${user.id}">id</td>
+            <td th:text="${user.name}">name</td>
+            <td th:text="${user.sex}">sex</td>
+            <td th:text="${user.age}">age</td>
+        </tr>
+        </tbody>
+    </table>
+    <br/>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /myboot
+
+#\u81EA\u5B9A\u4E49key: value
+school.name: cjdx
+school.website: www.cjdx.com
+school.address: jingzhou

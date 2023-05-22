@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>模板内置对象,方便使用request，session</title>
+</head>
+<body>
+<div style="text-align: center">
+    <h3>内置对象#request,#session,session的使用</h3>
+    <p>获取作用域中的数据</p>
+    <p th:text="${#request.getAttribute('requestData')}"></p>
+    <p th:text="${#request.getAttribute('myname')}"></p>
+    <p th:text="${#session.getAttribute('sessionData')}"></p>
+    <p th:text="${#session.getAttribute('loginname')}"></p>
+    <p th:text="${session.loginname}"></p>
+    <!--        session和#session是不一样的，
+                session代表session对象中保存的Map集合，可以利用Key取出Value值，但不能调用session对象中的方法
+                #session代表session对象，可以调用对象中的各种方法-->
+</div>
+<br/>
+<div style="text-align: center">
+    <h3>使用内置对象的方法</h3>
+    <p th:text="|getRequestURL=${#request.getRequestURL()}|"></p>
+    <p th:text="|getRequestURI=${#request.getRequestURI()}|"></p>
+    <p th:text="|getQueryString=${#request.getQueryString()}|"></p>
+    <p th:text="|getContextPath=${#request.getContextPath()}|"></p>
+    <p th:text="|getServerName=${#request.getServerName()}|"></p>
+    <p th:text="|getServerPort=${#request.getServerPort()}|"></p>
+    <p th:text="|sessionId,getId=${#session.getId()}|"></p>
+    <h3>param对象，表示请求的参数集合</h3>
+    <p th:text="|param.name=${param.name}|"></p>
+    <p th:text="|param参数数量=${param.size()}|"></p>
+    <p th:text="|内置对象locale=${#locale}|"></p>
+    <p th:text="|内置对象application保存的Map集合=${application.size()}|"></p>
+</div>
+</body>
+</html>

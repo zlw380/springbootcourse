@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>链接表达式</title>
+</head>
+<body>
+<h3>链接表达式链接绝对路径</h3>
+<a th:href="@{http://www.baidu.com}" target="_blank" href="index.html">链接到百度</a>
+<!--    如果地址是www.baidu.com，那么就是相对路径：http://localhost:8080/tpl/www.baidu.com，404-->
+<h3>链接表达式链接相对路径</h3>
+<!--    http://localhost:8080/tpl/queryAccount,请求地址是从项目根目录开始加tpl/queryAccount，正常-->
+<a th:href="@{/tpl/queryAccount}" href="index.html">相对地址，没有参数</a>
+<!--    http://localhost:8080/queryAccount，请求地址是从项目根目录开始加queryAccount，404-->
+<a th:href="@{/queryAccount}" href="index.html">相对地址，没有参数</a>
+<!--    http://localhost:8080/tpl/queryAccount，请求地址是从当前目录开始加queryAccount，正常-->
+<a th:href="@{queryAccount}" href="index.html">相对地址，没有参数</a>
+<br/>
+<h3>链接的相对地址，使用字符串链接传递一个参数</h3>
+<a th:href="@{'/tpl/queryAccount/'+${userId}}" href="index.html">Restful风格url传参</a>
+<br/>
+<h3>链接的相对地址，使用字符串链接传递两个参数</h3>
+<a th:href="@{'queryAccount/'+${userId}+'/'+${userAge}}" href="index.html">Restful风格url传参</a>
+<br/>
+<h3>测试传统get方式传参</h3>
+<a th:href="@{'queryAccount?id='+${userId}}" href="index.html">传统get方式传参</a>
+<br/>
+<h3>推荐使用的传参方式</h3>
+<a th:href="@{queryAccount(id=${userId})}" href="index.html">推荐使用的传参方式</a>
+<br/>
+<!--    http://localhost:8080/tpl/queryAccount?id=7878&age=7777-->
+<h3>推荐方式传递多个参数</h3>
+<a th:href="@{queryAccount(id=${userId},age=${userAge})}" href="index.html">推荐方式传递多个参数</a>
+</body>
+</html>

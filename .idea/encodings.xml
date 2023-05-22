@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/002-springboot-first/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/003-springboot-second/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/005-springboot-mvc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/005-springboot-mvc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/006-springboot-environment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/007-springboot-multi-environment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/008-springboot-custom-yml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/009-springboot-jsp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/010-springboot-container/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/011-springboot-commandlinerunner/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/012-springboot-interceptor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/013-springboot-servlet/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/014-springboot-filter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/015-springboot-characterencodingfilter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/016-springboot-character-properties/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/017-springboot-mapper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/018-springboot-mapperscan/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/019-springboot-transactional/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/020-springboot-rest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/027-thymeleaf-first/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/028-thymeleaf-course/src/main/java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
